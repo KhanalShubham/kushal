@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:id="@+id/item_root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/button_background"
+    android:backgroundTint="#7000BCD4"
+    android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:id="@+id/iv_item_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/photo_camera"/>
+
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/iv_item_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Tiny Shoe"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:textSize="21sp"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_title"
+        tools:text="This is the description of the tiny shoes for babies. This is the description of the tiny shoes for babies" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

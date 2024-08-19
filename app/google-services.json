@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "268103079251",
+    "project_id": "ms-todo-clone-675ad",
+    "storage_bucket": "ms-todo-clone-675ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268103079251:android:9d747013be5e23d1397da6",
+        "android_client_info": {
+          "package_name": "com.example.kidszone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268103079251-4glbkiuhcdvvllq70fc87m0tfuqfrcq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_fX5ekYlDKqcnRKD72O-qIlvIysIE-xc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268103079251-4glbkiuhcdvvllq70fc87m0tfuqfrcq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

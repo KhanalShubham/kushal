@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61D9E8"
+    tools:context="Fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <!-- Profile Title -->
+        <TextView
+            android:id="@+id/profileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"/>
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profile"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/profileTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Profile Name -->
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kushal Khanal"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/profileImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Profile Email -->
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kushal@gmail.com"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/profileName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Settings Button -->
+        <Button
+            android:id="@+id/buttonSettings"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            app:backgroundTint="#D30B90A1"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/baseline_settings_24"
+            app:layout_constraintTop_toBottomOf="@id/profileEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Profile Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/buttonSettings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp">
+
+            <!-- My Reviews Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/icon"
+                android:drawablePadding="20dp"
+                android:paddingStart="20dp"
+                android:text="Reviews"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Account Settings Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:drawableStart="@drawable/baseline_settings_24"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:paddingStart="20dp"
+                android:text="Account Info"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Personal Information Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/icon"
+                android:drawablePadding="20dp"
+                android:paddingStart="20dp"
+                android:text="Personal Info"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLogout"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="26dp"
+            android:backgroundTint="#D30B90A1"
+            android:text="Logout"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
